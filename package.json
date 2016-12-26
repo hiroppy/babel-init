@@ -1,0 +1,56 @@
+{
+  "name": "babel-init",
+  "main": "bin/index.js",
+  "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Setup `.babelrc` using command.",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "keywords": [
+    "babel",
+    "babelrc",
+    "cli",
+    "command",
+    "preset",
+    "plugin"
+  ],
+  "homepage": "",
+  "bin": {
+    "babel-init": "bin/index.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "lint": "eslint .",
+    "test": "ava",
+    "test:watch": "ava -w",
+    "postcover": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "babel-eslint": "^7.1.1",
+    "conventional-changelog-cli": "^1.2.0",
+    "eslint": "^3.12.2",
+    "eslint-config-sky": "^1.4.0",
+    "nyc": "^10.0.0",
+    "pify": "^2.3.0"
+  },
+  "dependencies": {
+    "cross-spawn": "^5.0.1",
+    "fs-extra": "^1.0.0",
+    "inquirer": "^2.0.0"
+  }
+}
