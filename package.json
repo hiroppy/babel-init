@@ -40,7 +40,7 @@
     "tap": true
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^0.16.0",
     "babel-eslint": "^7.1.1",
     "conventional-changelog-cli": "^1.2.0",
     "eslint": "^3.12.2",
