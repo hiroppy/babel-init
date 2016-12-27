@@ -1,6 +1,6 @@
 # babel-init
 
-<!-- travis https://travis-ci.org/ -->
+[![Build Status](https://travis-ci.org/abouthiroppy/babel-init.svg?branch=master)](https://travis-ci.org/abouthiroppy/babel-init)
 <!-- codecov https://codecov.io/gh -->
 <!-- npm version badge: https://badge.fury.io/ -->
 
@@ -18,7 +18,9 @@ $ babel-init
 
 Select presets and plugins!
 ```
-List: https://babeljs.io/docs/plugins/
+![](./images/img1.png)
+
+Plugin List: https://babeljs.io/docs/plugins/
 
 ### output
 
